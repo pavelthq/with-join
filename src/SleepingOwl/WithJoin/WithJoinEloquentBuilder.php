@@ -89,7 +89,7 @@ class WithJoinEloquentBuilder extends Builder
 		]);
 		$joinLeftCondition = implode('.', [
 			$joinTableAlias,
-			$relation->getOtherKey()
+			$relation->getOwnerKey()
 		]);
 		$joinRightCondition = implode('.', [
 			$currentTableAlias,
