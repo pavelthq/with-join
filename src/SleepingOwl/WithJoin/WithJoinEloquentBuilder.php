@@ -222,7 +222,7 @@ class WithJoinEloquentBuilder extends Builder
 	 * @param array $relations
 	 * @return \Illuminate\Database\Query\Builder
 	 */
-	public function with($relations)
+	public function with($relations, $callback = null)
 	{
 		//if passing the relations as arguments, pass on to eloquents with
 		if (is_string($relations)) $relations = func_get_args();
